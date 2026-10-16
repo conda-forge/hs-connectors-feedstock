@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 0.8.1
+  version: 0.9.0
 
 package:
   name: hs-connectors
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/h/hs-connectors/hs_connectors-${{ version }}.tar.gz
-  sha256: f0783676af22c9d2554783350ddfc5ba77b1f31f4043c538521da4af345f728d
+  sha256: 41a7d11507f83e9734428e71b1aa63b2dfc2ef59cb1232d95e7ad1f57fe8bce9
 
 build:
   number: 0
@@ -26,7 +26,7 @@ requirements:
   run:
     - python >=${{ python_min }}
     - safetensors
-    - pytorch
+    - pytorch >=2.6
 tests:
   - python:
       python_version:
